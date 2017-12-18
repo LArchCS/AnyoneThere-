@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="10dp"
+android:background="#f1ffffff">
+
+<TextView
+    android:id="@+id/taken_heading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="100dp"
+    android:padding="10dp"
+    android:text="Heading"
+    android:textSize="6pt"/>
+
+<TextView
+    android:id="@+id/taken_phone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/taken_heading"
+    android:layout_marginLeft="100dp"
+    android:padding="10dp"
+    android:text="Requester phone"
+    android:textSize="6pt"/>
+
+<TextView
+    android:id="@+id/taken_reward"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/taken_phone"
+    android:layout_marginLeft="100dp"
+    android:padding="10dp"
+    android:text="Reward"
+    android:textSize="6pt"/>
+
+<ImageView
+    android:id="@+id/taken_userID"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="14dp"
+    android:layout_marginStart="14dp"
+    android:layout_marginTop="18dp"
+    app:srcCompat="@drawable/ic_face" />
+
+
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/taken_userID"
+    android:layout_alignStart="@+id/taken_userID"
+    android:layout_below="@+id/taken_userID">
+
+    <RatingBar
+        android:id="@+id/taken_ratingbar"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.1" />
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/taken_stamp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+
+    android:layout_alignEnd="@+id/taken_heading"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/taken_heading"
+    android:layout_marginTop="20dp"
+    app:srcCompat="@drawable/stamp_taken" />
+
+    <Button
+        android:id="@+id/taken_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/taken_reward"
+        android:text="Detail" />
+
+</RelativeLayout>
+

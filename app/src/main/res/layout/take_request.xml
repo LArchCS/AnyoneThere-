@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/takeRequest_postUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/post_request_description"
+        android:layout_alignStart="@+id/post_request_description"
+        android:layout_below="@+id/post_request_description"
+        android:layout_marginTop="14dp"
+        android:text="POST USER"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/takeRequest_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/takeRequest_postUser"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Request" />
+
+    <TextView
+        android:id="@+id/takeRequest_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/takeRequest_head"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Reward" />
+
+    <TextView
+        android:id="@+id/takeRequest_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/takeRequest_reward"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="From" />
+
+    <TextView
+        android:id="@+id/takeRequest_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/takeRequest_from"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="To" />
+
+    <TextView
+        android:id="@+id/takeRequest_Expire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/takeRequest_to"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Expire" />
+
+    <TextView
+        android:id="@+id/takeRequest_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/takeRequest_Expire"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/takeRequest_descriptionContent"
+        android:layout_width="325dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/takeRequest_description"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:text="Descriptions" />
+
+    <TextView
+        android:id="@+id/takeRequest_headContent"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/takeRequest_head"
+        android:layout_alignBottom="@+id/takeRequest_head"
+        android:layout_toEndOf="@+id/takeRequest_description"
+        android:layout_toRightOf="@+id/takeRequest_description"
+        android:ems="10"
+        android:hint="Request"
+        android:textSize="5pt" />
+
+    <TextView
+        android:id="@+id/post_request_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/takeRequest_from"
+        android:ems="10" />
+
+
+
+    <TextView
+        android:id="@+id/takeRequest_fromContent"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/takeRequest_rewardContent"
+        android:layout_alignStart="@+id/takeRequest_rewardContent"
+        android:layout_alignTop="@+id/takeRequest_from"
+        android:ems="10"
+        android:text="Where"
+        android:textSize="5pt" />
+
+    <TextView
+        android:id="@+id/takeRequest_rewardContent"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/takeRequest_headContent"
+        android:layout_alignStart="@+id/takeRequest_headContent"
+        android:layout_below="@+id/takeRequest_head"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Request"
+        android:textSize="5pt" />
+
+    <TextView
+        android:id="@+id/takeRequest_toContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/takeRequest_fromContent"
+        android:layout_alignLeft="@+id/takeRequest_fromContent"
+        android:layout_alignRight="@+id/takeRequest_fromContent"
+        android:layout_alignStart="@+id/takeRequest_fromContent"
+        android:layout_alignTop="@+id/takeRequest_to"
+        android:ems="10"
+        android:text="Where"
+        android:textSize="5pt" />
+
+    <TextView
+        android:id="@+id/takeRequest_ExpireContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/takeRequest_Expire"
+        android:layout_alignBottom="@+id/takeRequest_Expire"
+        android:layout_alignEnd="@+id/takeRequest_toContent"
+        android:layout_alignLeft="@+id/takeRequest_toContent"
+        android:layout_alignRight="@+id/takeRequest_toContent"
+        android:layout_alignStart="@+id/takeRequest_toContent"
+        android:ems="10"
+        android:text="When"
+        android:textSize="5pt" />
+
+    <Button
+        android:id="@+id/takeRequest_take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/takeRequest_descriptionContent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/takeRequest_descriptionContent"
+        android:layout_marginBottom="38dp"
+        android:text="Take" />
+
+    <Button
+        android:id="@+id/takeRequest_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/takeRequest_descriptionContent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/takeRequest_descriptionContent"
+        android:layout_marginBottom="38dp"
+        android:text="Call Requester" />
+
+    <Button
+        android:id="@+id/takeRequest_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/takeRequest_descriptionContent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/takeRequest_descriptionContent"
+        android:layout_marginBottom="38dp"
+        android:text="Back" />
+
+
+</RelativeLayout>

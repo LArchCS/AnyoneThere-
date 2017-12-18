@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/profile_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_cover" />
+
+    <ImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        app:srcCompat="@drawable/user_head_0" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="user_name"
+        android:layout_below="@+id/profile_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/profile_name" />
+
+    <RatingBar
+        android:id="@+id/profile_ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:id="@+id/profile_credit_label"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/profile_ratingBar"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/profile_email"
+        android:layout_toStartOf="@+id/profile_email"
+        android:src="@drawable/bcoin" />
+
+    <TextView
+        android:id="@+id/profile_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profile_photo"
+        android:layout_alignRight="@+id/profile_photo"
+        android:layout_below="@+id/profile_ratingBar"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="email"
+        android:layout_below="@+id/profile_credit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/profile_email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="phone"
+        android:layout_below="@+id/profile_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/profile_phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Posted: "
+        android:textSize="20dp"
+        android:layout_below="@+id/profile_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/profile_task" />
+
+    <TextView
+        android:id="@+id/profile_accomplished_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profile_accomplished"
+        android:layout_alignBottom="@+id/profile_accomplished"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/profile_accomplished"
+        android:layout_toRightOf="@+id/profile_accomplished"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Accomplished: "
+        android:textSize="20dp"
+        android:layout_below="@+id/profile_task"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/profile_accomplished" />
+
+    <TextView
+        android:id="@+id/profile_post_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile_accomplished"
+        android:layout_toEndOf="@+id/profile_task"
+        android:layout_toRightOf="@+id/profile_task"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/profile_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profile_back_button"
+        android:layout_alignBottom="@+id/profile_back_button"
+        android:layout_toLeftOf="@+id/profile_photo"
+        android:layout_toStartOf="@+id/profile_photo"
+        android:text="EDIT" />
+
+    <Button
+        android:id="@+id/profile_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/profile_credit"
+        android:layout_toRightOf="@+id/profile_credit"
+        android:text="BACK" />
+
+</RelativeLayout>
